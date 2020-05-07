@@ -19,9 +19,10 @@
  
 $colors:(
     primary:#bb6bbf, 
+    secondary:rgb(233, 163, 0), 
     accent1:#fff6bb,
-    accent2:#005DFF,
-    primary-light:lighten(#005DFF,30%)
+    accent2:#005fff,
+    primary-light:lighten(#005fff,30%)
 );
 
 $paddings:(
@@ -66,10 +67,12 @@ margin:0;
 
         header a{
             color:#fff;
+            font-size: 2em;
+            font-weight: 600;
             text-decoration:none;
             padding:padding(cool);
             display: block;
-            text-decoration:uppercase;
+            text-transform:uppercase;
         } 
 
             main{
@@ -78,7 +81,8 @@ margin:0;
                 background:#fff;
                 padding:padding(cooler);
                 margin:1em auto;
-                border-radius:0 10px 30px rgba(0,0,0,.2);
+                border-radius:7px;
+                box-shadow:0 3px 3px 0 rgba(#333,0.5);
                 width:80%; 
                 z-index:1;
 
@@ -114,7 +118,36 @@ margin:0;
 
 
                 }
-            }
+
+
+            } 
+
+    section#primary{
+
+        color:#fff;
+        padding:padding(cool);
+        text-align:center;
+
+        h1{ 
+
+            font-size:2em;
+            margin-top:10px;
+            text-transform:uppercase;
+
+        }
+        P{
+
+            font-size:1.3em;
+        } 
+        a{
+            font-size:1.3em;
+            text-decoration: none;
+            color:color(secondary);
+            font-weight:600;
+        }
+
+
+    }
 
 
 }

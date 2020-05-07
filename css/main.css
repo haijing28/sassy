@@ -24,7 +24,7 @@ body #bg {
   -webkit-clip-path: polygon(100% 0, 100% 68%, 70% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 68%, 70% 100%, 0 100%, 0 0);
   /*background-color:map-get($colors,accent2);*/
-  background-color: #005DFF;
+  background-color: #005fff;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -33,18 +33,21 @@ body #bg {
 
 body header a {
   color: #fff;
+  font-size: 2em;
+  font-weight: 600;
   text-decoration: none;
   padding: 15pt;
   display: block;
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
+  text-transform: uppercase;
 }
 
 body main section#card {
   background: #fff;
   padding: 30pt;
   margin: 1em auto;
-  border-radius: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(51, 51, 51, 0.5);
+          box-shadow: 0 3px 3px 0 rgba(51, 51, 51, 0.5);
   width: 80%;
   z-index: 1;
 }
@@ -63,7 +66,7 @@ body main section#card ul li span {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #99beff;
+  background-color: #99bfff;
   border-radius: 50%;
   margin-right: 10px;
   z-index: 9999;
@@ -73,5 +76,28 @@ body main section#card ul li strong {
   display: inline-block;
   margin-left: 40px;
   margin-top: 10px;
+}
+
+body section#primary {
+  color: #fff;
+  padding: 15pt;
+  text-align: center;
+}
+
+body section#primary h1 {
+  font-size: 2em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+body section#primary P {
+  font-size: 1.3em;
+}
+
+body section#primary a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #e9a300;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
