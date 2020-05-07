@@ -1,5 +1,64 @@
+/* ---- sass is complied to css-- */
+/* variables of sass */
+/* caniuse.com/#search=variables css variabes(custom properties)*/
+/* dollar sign to declare a variable*/
+/* $mycolor: #005DFF; */
+/* background-color: $mycolor; */
+/* background-color:map-get($colors,primary); */
+/* deal wth multiple colors creating an color object */
+/* no $ needed inside () ,take references of js objects */
+/* passing arguments inside map-get*/
+/* a very JS way to write sass */
+/*function*/
+body, html {
+  height: 100%;
+}
 
 body {
+  font-family: "Helvetica";
+  margin: 0;
+  /*#bg is an nesting element*/
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 68%, 70% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 68%, 70% 100%, 0 100%, 0 0);
+  /*background-color:map-get($colors,accent2);*/
   background-color: #005DFF;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+body header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15pt;
+  display: block;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+body main section#card {
+  background: #fff;
+  padding: 30pt;
+  margin: 1em auto;
+  border-radius: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+body main section#card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main section#card ul span {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  color: #ccdfff;
 }
 /*# sourceMappingURL=main.css.map */
