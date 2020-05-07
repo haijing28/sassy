@@ -1,13 +1,40 @@
+
+
 /* ---- sass is complied to css-- */ 
 /* variables of sass */
 /* caniuse.com/#search=variables css variabes(custom properties)*/
 
 /* dollar sign to declare a variable*/
 
-$mycolor: #005DFF;
 
-body{
+/* $mycolor: #005DFF; */
+/* background-color: $mycolor; */
+/* background-color:map-get($colors,primary); */
+/* deal wth multiple colors creating an color object */
+/* no $ needed inside () ,take references of js objects */
 
-    backgroudn-color: $mycolor;
+/* passing arguments inside map-get*/
+/* a very JS way to write sass */
+
+ 
+$colors:(
+    primary:#bb6bbf, 
+    accent1:#fff6bb
+);
+body,html{
+height:100%;
+
+}
+
+body {
+
+font-family:"Helvetica";
+margin:0;
+
+
+#bg{
+    clip-path: polygon(100% 0, 100% 68%, 70% 100%, 0 100%, 0 0);
+    background-color:map-get($colors,accent1);
+}
 
 }
