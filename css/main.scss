@@ -1,0 +1,13 @@
+/* ---- sass is complied to css-- */ 
+/* variables of sass */
+/* caniuse.com/#search=variables css variabes(custom properties)*/
+
+/* dollar sign to declare a variable*/
+
+$mycolor: #005DFF;
+
+body{
+
+    backgroudn-color: $mycolor;
+
+}
