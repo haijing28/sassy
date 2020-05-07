@@ -4,10 +4,15 @@
 
 - Sasss Variables
   - $xxx:();
-- Map & map-get 
+  
+- Map & map-get
+
 - Nesting
+
 - Function
-  -@function name($variable){ @return map-get($variableBefore,$variable)}
+  - @function name($variable){ @return map-get($variableBefore,$variable)}
+  
 - Mixin & Media Query
+
 - @includes 
 
