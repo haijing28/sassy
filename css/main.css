@@ -8,8 +8,9 @@
 /* deal wth multiple colors creating an color object */
 /* no $ needed inside () ,take references of js objects */
 /* passing arguments inside map-get*/
-/* a very JS way to write sass */
+/* a very JS way to write styling sheets */
 /*function*/
+/* mixin is for media query,simplify coding*/
 body, html {
   height: 100%;
 }
@@ -29,6 +30,13 @@ body #bg {
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 62% 100%, 0% 100%);
+  }
 }
 
 body header a {
@@ -97,6 +105,7 @@ body section#primary P {
 
 body section#primary a {
   font-size: 1.3em;
+  border: border(nice);
   text-decoration: none;
   text-transform: uppercase;
   width: 80%;
