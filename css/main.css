@@ -8,9 +8,7 @@
 /* deal wth multiple colors creating an color object */
 /* no $ needed inside () ,take references of js objects */
 /* passing arguments inside map-get*/
-/* a very JS way to write styling sheets */
-/*function*/
-/* mixin is for media query,simplify coding*/
+/* a very JS way to write sass */
 body, html {
   height: 100%;
 }
@@ -164,4 +162,5 @@ body main section#primary a {
     padding: 15pt 60pt;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
